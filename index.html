@@ -3,35 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>私のWebページ</title>
+  <title>SOI'S WEB PAGE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- ヘッダー -->
   <header>
-    <h1>My Web Page</h1>
-    <p>こんにちは！私のWebページです。</p>
+    <h1>SOI'S WEB PAGE</h1>
+    <p>こんにちは！私のWebページへようこそ。</p>
+
+    <nav>
+      <a href="#profile">自己紹介</a>
+      <a href="#hobby">趣味</a>
+      <a href="#game">制作したゲーム</a>
+      <a href="#fortune">ランダム名言</a>
+    </nav>
   </header>
 
   <main>
-    <section class="profile">
-      <h2>自己紹介</h2>
+
+    <!-- 自己紹介 -->
+    <section id="profile">
+      <h2>👤 自己紹介</h2>
+
+      <p>こんにちは、soiです。</p>
       <p>大学でデザインやプログラミングについて学んでいます。</p>
-      <p>趣味は動画編集と弓道です。</p>
+      <p>将来はクリエイティブ関係の仕事に興味があります。</p>
     </section>
 
-    <section>
-      <h2>JavaScriptを使ってみよう</h2>
-      <p id="message">ボタンを押してください。</p>
-      <button onclick="changeMessage()">クリック！</button>
+
+    <!-- 趣味 -->
+    <section id="hobby">
+      <h2>🎯 趣味</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>🎬 動画編集</h3>
+          <p>
+            動画を編集して作品を作ることが好きです。
+            映像や音楽を組み合わせて表現することに興味があります。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🏹 弓道</h3>
+          <p>
+            弓道をしています。
+            集中して一つの動作に取り組むところが好きです。
+          </p>
+        </div>
+
+      </div>
     </section>
+
+
+    <!-- 制作したゲーム -->
+    <section id="game">
+      <h2>🎮 制作したゲーム</h2>
+
+      <div class="game-card">
+        <h3>🥥 Coconut Click</h3>
+
+        <p>
+          Unityを使って制作したゲームです。
+          できるだけ早くココナッツをクリックして、
+          反応速度を測定します。
+        </p>
+
+        <p>
+          「どれだけ早くクリックできるか」を
+          楽しむシンプルなゲームです。
+        </p>
+
+        <button onclick="showGameMessage()">
+          ゲームについてもっと見る
+        </button>
+
+        <p id="game-message"></p>
+      </div>
+    </section>
+
+
+    <!-- ランダム名言 -->
+    <section id="fortune">
+      <h2>🔮 ランダム名言装置</h2>
+
+      <p>
+        ボタンを押すと、今日の名言がランダムで表示されます。
+      </p>
+
+      <div class="quote-box">
+        <p id="quote">「ボタンを押して名言を引こう！」</p>
+        <p id="author"></p>
+
+        <button onclick="drawQuote()">名言を引く！</button>
+      </div>
+    </section>
+
   </main>
 
+
+  <!-- フッター -->
   <footer>
-    <p>2026 My Web Page</p>
+    <p>© 2026 SOI'S WEB PAGE</p>
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
