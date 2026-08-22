@@ -1,4 +1,6 @@
-// ゲーム紹介のボタン
+// ====================
+// ゲームについてもっと見る
+// ====================
 
 function showGameMessage() {
   const message = document.getElementById("game-message");
@@ -8,7 +10,9 @@ function showGameMessage() {
 }
 
 
+// ====================
 // ランダム名言
+// ====================
 
 const quotes = [
   {
@@ -35,9 +39,7 @@ const quotes = [
 
 
 function drawQuote() {
-
-  const randomIndex =
-    Math.floor(Math.random() * quotes.length);
+  const randomIndex = Math.floor(Math.random() * quotes.length);
 
   const selectedQuote = quotes[randomIndex];
 
