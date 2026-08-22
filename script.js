@@ -1,16 +1,4 @@
 // ====================
-// ゲームについてもっと見る
-// ====================
-
-function showGameMessage() {
-  const message = document.getElementById("game-message");
-
-  message.textContent =
-    "Unityを使って制作しました！反応速度を測定するゲームです。";
-}
-
-
-// ====================
 // ランダム名言
 // ====================
 
